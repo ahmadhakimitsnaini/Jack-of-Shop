@@ -45,7 +45,7 @@ graph TD
     Worker <-->|6. Extract DOM| Jaknote
     Worker <-->|7. Generate SEO & Image Prompts| LLM
     Worker -->|8. Upload Enhanced Media| S_Storage
-    Worker -->|9. Update Status via SQLAlchemy| S_DB
+    Worker -->|9. Update Status| S_DB
     S_DB -.->|10. Trigger Webhooks| S_Realtime
     S_Realtime -.->|11. WebSocket Push| Client
     Client -.->|12. Download Excel| Shopee
