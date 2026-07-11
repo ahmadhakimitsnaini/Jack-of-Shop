@@ -1,0 +1,32 @@
+# ============================================================
+# Jack Of Shopee — .gitignore
+# ============================================================
+
+# --- Environment & Secrets ---
+.env
+*.env.local
+
+# --- Python ---
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Alembic ---
+# (jangan ignore folder alembic, hanya artifact build)
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
